@@ -22,8 +22,8 @@
     "bootstrap": "~3.1.1",
     "jquery": "~2.1.1",
     "angular-route": "~1.2.16",
-    "socket.io-client": "~0.9.16",
     "d3": "~3.4.6",
-    "angular-animate": "~1.2.16"
+    "angular-animate": "~1.2.16",
+    "angular-cookies": "~1.2.16"
   }
 }
