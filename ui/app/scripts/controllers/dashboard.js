@@ -6,6 +6,7 @@ angular
 
         $http.get('/user/get').success(function(data) {
             console.log(data);
+            $scope.content = JSON.stringify(data,0,4);
         });
 
         $scope.logout = logout;
