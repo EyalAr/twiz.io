@@ -6,7 +6,7 @@ angular
 
         $scope.pleaseWait = true;
         $scope.loggedIn = false;
-        $scope.loginWithGithub = loginWithGithub;
+        $scope.loginWith = loginWith;
 
         $http.get('/auth/isLoggedIn', {
             data: {
@@ -21,9 +21,9 @@ angular
             }
         });
 
-        function loginWithGithub() {
+        function loginWith(provider) {
             $http.post('/auth/login', {
-                provider: 'github'
+                provider: provider
             }).success(function(data) {
                 window.location = data.next;
             });

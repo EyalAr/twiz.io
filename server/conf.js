@@ -38,15 +38,26 @@ var conf = {
         timeout: 300000 // 5 minutes
     },
 
-    // Github:
+    // Github auth:
     github: {
         clientId: '--client-id--',
         clientSecret: '--client-secret--',
         gate: 'https://github.com/login/oauth/authorize',
         exchange: 'https://github.com/login/oauth/access_token',
-        scope: '',
+        scope: 'user:email', // comma separated list of scopes
         getUser: 'https://api.github.com/user',
+        getEmails: 'https://api.github.com/user/emails',
         userAgent: 'Twiz.io <eyalarubas@gmail.com>'
+    },
+
+    // Google auth:
+    google: {
+        clientId: '--client-id--',
+        clientSecret: '--client-secret--',
+        gate: 'https://accounts.google.com/o/oauth2/auth',
+        exchange: 'https://accounts.google.com/o/oauth2/token',
+        scope: 'profile email', //space separated list of scopes
+        getUser: 'https://www.googleapis.com/plus/v1/people/me'
     }
 
 }
