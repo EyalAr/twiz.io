@@ -135,6 +135,7 @@ module.exports = function(cMongo, cRedis, conf, log) {
             }, {}, {
                 $set: {
                     google: user,
+                    primary: 'google',
                     created: new Date().getTime()
                 },
                 $push: {

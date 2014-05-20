@@ -166,6 +166,7 @@ module.exports = function(cMongo, cRedis, conf, log) {
             }, {}, {
                 $set: {
                     github: user,
+                    primary: 'github',
                     created: new Date().getTime()
                 },
                 $push: {
