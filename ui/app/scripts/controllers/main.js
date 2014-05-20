@@ -13,7 +13,6 @@ angular
                 session: $cookies.twizioSessionKey
             }
         }).success(function(data) {
-            console.log(data);
             if (data.success && data.loggedIn) {
                 $location.path('/dashboard');
             } else {

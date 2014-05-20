@@ -27,15 +27,14 @@ var conf = {
     sessionKey: {
         cookie: 'twizioSessionKey',
         serverRefreshInterval: 2592000000, // 30 days
-        clientMaxAge: 31536000000, // 1 year
-        size: 20
+        clientMaxAge: 31536000000 // 1 year
     },
 
     // oauth2 state param:
     state: {
         cookie: 'twizioState',
         size: 20,
-        timeout: 300000 // 5 minutes
+        timeout: 1200000 // 20 minutes
     },
 
     // Github auth:

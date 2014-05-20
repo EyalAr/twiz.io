@@ -5,7 +5,6 @@ angular
     .controller('dashboardCtrl', function($scope, $http) {
 
         $http.get('/user/get').success(function(data) {
-            console.log(data);
             $scope.content = JSON.stringify(data,0,4);
         });
 
